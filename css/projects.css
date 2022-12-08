@@ -44,18 +44,6 @@
     margin:1rem;
 }
 
-.imageList {
-    list-style:none;
-    display:flex;
-    flex-wrap: wrap;
-}
-.StumbleImage {
-    max-width: 10rem;
-}
-.slide{
-    margin:1rem;
-}
-
 .firstPart {
     float:left;
     margin: 1rem 0;
@@ -81,4 +69,10 @@
 #handles {
     display:flex;
     justify-content: center;
+}
+
+
+/* Button Displacement */
+.displaced {
+    margin-left:4.6rem;
 }

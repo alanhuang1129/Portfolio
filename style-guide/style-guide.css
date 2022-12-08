@@ -2,6 +2,18 @@
     src:url(fonts/Bitter-VariableFont_wght.ttf);
     font-family: Bitter;
 }
+@font-face {
+    src:url(fonts/MeriendaOne-Regular.ttf);
+    font-family: Merienda-One;
+}
+@font-face {
+    src:url(fonts/MavenPro-VariableFont_wght.ttf);
+    font-family: MavenPro;
+}
+/* Style guide stuff */
+.styleGuideEntry {
+    text-align: center;
+}
 
 body {
     font-family: Verdana, sans-serif;
@@ -15,6 +27,9 @@ a {
     text-decoration: none;
     color:white;
 }
+p {
+    line-height: 1.5rem;
+}
 
 .styleGuide {
     background-color: #E2E8F0;
@@ -22,12 +37,13 @@ a {
 /* Color Palettes */
 .styleGuideColorPalette {
     display: flex;
+    justify-content: center;
 }
 .styleGuideColorPalette * {
     padding:2rem;
 }
 .boxed {
-    border:0.1rem solid black;
+    border:0.05rem solid black;
 }
 .navBarColorWrapper {
     background-color: #2D3748;
@@ -117,7 +133,7 @@ a {
 #bio {
     display: flex;
     flex-direction: column;
-    max-width: 21rem;
+    max-width: 30rem;
 }
 #firstLine {
     font-family: Bitter;
@@ -128,10 +144,11 @@ a {
 #focus {
     font-size:0.95rem;
     margin-block-start: 0;
-    max-width:17rem;
+    max-width:30rem;
 }
-#interests {
-    max-width:17rem;
+
+#personal, #interests {
+    max-width:30rem;
 }
 #name, #hand {
     float:left;
@@ -139,6 +156,7 @@ a {
 
 #headshotPicture {
     margin-left:5rem;
+    margin-top:4rem;
     max-width:15rem;
     border: 0.05rem solid black;
 }
@@ -175,6 +193,7 @@ a {
     border:0 solid #E2E8F0;
 }
 .projectText {
+    margin-top:2rem;
     color:black;
     z-index:1;
 }
@@ -199,6 +218,8 @@ a {
     
 }
 
+/* Projects Page */
+
 /* Button Design */
 .button {
     margin:1rem;
@@ -219,4 +240,99 @@ a {
 .button:hover, .button:focus {
     background-color: #404856;
     transform:scale(1.03);
+}
+
+/*Project Overviews */
+.projectIntro {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#title {
+    font-family: Merienda-One;
+}
+#slogan {
+    font-weight: 100;
+    font-family: Merienda-One;
+}
+#titleMaven {
+    font-family: MavenPro;
+}
+#sloganMaven {
+    font-weight: 100;
+    font-family: MavenPro;
+}
+.projectsOverview {
+    padding: 2rem;
+    background-color: #DAE2ED;
+}
+.projectsOverviewHeader {
+    text-align: center;
+}
+.projectsOverviewSubheader {
+    margin-bottom: -0.5rem;
+}
+.UIDesign, .completed-prePolish, .completed-postPolish,
+.challenges, .conclusion {
+    padding: 2rem;
+}
+.details {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ideation, .content {
+    max-width: 60rem;
+}
+.inTextLink {
+    text-decoration: none;
+    color:blue;
+}
+.inTextLink:hover, .inTextLink:focus {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+/*Image Collage*/
+.imageWrapper {
+    display:flex;
+    flex-wrap: wrap;
+}
+.imageList {
+    list-style:none;
+    display:flex;
+    flex-wrap: wrap;
+}
+.StumbleImage {
+    max-width: 10rem;
+}
+.slide{
+    margin:1rem;
+}
+.enlarged {
+    max-width: 85rem;
+}
+
+/* Others */
+.shopThumbnail {
+    max-width: 30rem;
+    border: 0.05rem solid black;
+    border-radius: 2rem;
+}
+.minersHavenThumbnail {
+    max-width: 30rem;
+    border: 0.05rem solid black;
+    border-radius: 2rem;
+}
+.videoPlayerContainer {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.videoPlayer {
+    width: 50rem;
+    height:30rem;
 }
